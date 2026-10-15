@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en-MY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Malaysia's Budget 2027 explained for Gen Z, in Manglish. What the RM510 billion budget means for your wages, tax, cash aid and the deficit.">
+<meta property="og:title" content="Gaji Naik, Tax Turun, Deficit… Still There Lah">
+<meta property="og:description" content="Budget 2027 is Malaysia's biggest ever at RM510 billion. Lots of goodies, and the deficit only gets a little smaller.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#9FDB5E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Budget 2027 Neko Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: gig poster + sticker sheet. Ink-framed gradient hero, Neko Tiles collage for the numbers, filterable goodies cards, ink "real talk" tile, Neko Nose promo. Light only. */
+:root{
+  --ink:#121410; --paper:#F7F3EA; --milk:#E8F3D6; --paper-dim:#CFCBBF;
+  --matcha:#9FDB5E; --matcha-hover:#86C845; --matcha-deep:#2E6B35;
+  --pink:#FF7AAE; --lilac:#C3B2FF; --butter:#FFE27A;
+  --muted:#4B4F45; --warning:#8A5300; --success:#2E6B35;
+  --illo-matcha-shade:#7DB443; --illo-pink-shade:#E25C93; --illo-lilac-shade:#9F8BE6; --illo-shadow:#D9D2C2;
+  --display:"Bricolage Grotesque","Archivo Black",Impact,sans-serif;
+  --body:"Instrument Sans","Inter",system-ui,sans-serif;
+  --bw:2px;
+  --ease-out:cubic-bezier(0.22,1,0.36,1);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .7 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+  color-scheme:light;
+}
+@media (min-width:1024px){ :root{ --bw:3px; } }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1408px;margin-inline:auto;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+@media (min-width:640px){ .wrap{padding-left:max(32px, env(safe-area-inset-left,0px));padding-right:max(32px, env(safe-area-inset-right,0px))} }
+@media (min-width:1024px){ .wrap{padding-left:max(64px, env(safe-area-inset-left,0px));padding-right:max(64px, env(safe-area-inset-right,0px))} }
+
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.on-ink :focus-visible{outline-color:var(--paper)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* type roles */
+.label{font:700 14px/20px var(--body);letter-spacing:.04em;text-transform:uppercase}
+.caption{font:500 12px/16px var(--body);letter-spacing:.02em}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+h2{font-weight:800;font-size:clamp(32px,5vw,52px);line-height:1.077;letter-spacing:-.02em;font-stretch:85%}
+h3{font-weight:800;font-size:clamp(26px,2.6vw,36px);line-height:1.111;letter-spacing:-.01em;font-stretch:85%}
+p{margin:0;max-width:68ch}
+.num{font-variant-numeric:tabular-nums}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:9999px;border:var(--bw) solid var(--ink);font:700 14px/20px var(--body);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:transform 100ms var(--ease-out),box-shadow 100ms var(--ease-out),background-color 100ms}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+.btn-primary{background:var(--matcha);color:var(--ink)}
+.btn-primary:hover{background:var(--matcha-hover)}
+.btn-secondary{background:var(--ink);color:var(--paper)}
+.btn-sm{min-height:40px;padding:8px 18px}
+
+/* chips */
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:9999px;border:2px solid var(--ink);font:500 12px/16px var(--body);letter-spacing:.02em;text-transform:uppercase;font-weight:700}
+.chip-lilac{background:var(--lilac)}
+.chip-butter{background:var(--butter)}
+.chip-paper{background:var(--paper)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--paper);border-bottom:var(--bw) solid var(--ink)}
+.top .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;padding-block:10px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 22px/1 var(--display);font-stretch:78%;text-transform:uppercase;letter-spacing:-.01em}
+.logo svg{width:34px;height:34px;flex:none}
+.top .btn{margin-left:auto}
+.nav{order:3;width:100%;overflow-x:auto;scrollbar-width:none;margin-inline:-4px}
+.nav ul{list-style:none;margin:0;padding:0 4px;display:flex;gap:4px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border-radius:9999px;text-decoration:none;white-space:nowrap;font:700 13px/16px var(--body);letter-spacing:.04em;text-transform:uppercase;transition:background-color 100ms}
+.nav a:hover{background:var(--milk)}
+@media (min-width:960px){
+  .nav{order:2;width:auto;margin-left:auto}
+  .top .btn{margin-left:8px}
+}
+
+/* sections */
+main section{padding-block:64px}
+@media (min-width:1024px){ main section{padding-block:96px} }
+.sec-head{display:grid;gap:16px;margin-bottom:32px}
+.sec-head p{color:var(--muted)}
+
+/* hero */
+.hero-wrap{padding-top:24px}
+@media (min-width:1024px){ .hero-wrap{padding-top:40px} }
+.hero{position:relative;display:grid;gap:40px;padding:32px 20px 40px;border:var(--bw) solid var(--ink);border-radius:32px;background:var(--grain),linear-gradient(135deg,var(--matcha),var(--butter));box-shadow:4px 4px 0 var(--ink)}
+@media (min-width:640px){ .hero{padding:48px 40px} }
+@media (min-width:1024px){ .hero{grid-template-columns:1.35fr 1fr;align-items:center;padding:64px;box-shadow:6px 6px 0 var(--ink)} }
+.hero-copy{display:grid;gap:24px;min-width:0}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px}
+.hero h1{font-weight:800;font-size:clamp(48px,8.4vw,88px);line-height:.95;letter-spacing:-.03em;font-stretch:78%}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){padding-left:.55em}
+.tagline{justify-self:start;display:inline-block;background:var(--ink);color:var(--paper);font:700 clamp(20px,2.4vw,28px)/1.2 var(--display);font-stretch:85%;text-transform:uppercase;letter-spacing:-.01em;padding:8px 16px;border-radius:12px;transform:rotate(-2deg)}
+.lede{font-weight:500;max-width:52ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px}
+.stage{position:relative;display:grid;place-items:center;padding-top:8px}
+.bowl{width:min(100%,380px);aspect-ratio:1;max-width:100%;border-radius:50%;background:var(--paper);border:var(--bw) solid var(--ink);display:grid;place-items:center;overflow:hidden}
+.bowl svg{width:84%;height:auto;margin-top:10%}
+
+/* stickers */
+.sticker{position:absolute;display:grid;place-items:center;text-align:center;width:128px;height:128px;border-radius:50%;background:var(--pink);border:var(--bw) solid var(--ink);box-shadow:4px 4px 0 var(--ink);font:800 19px/1 var(--display);font-stretch:80%;text-transform:uppercase;letter-spacing:-.01em;padding:12px;transform:rotate(-8deg);animation:slap 450ms var(--ease-out) 500ms both}
+.sticker small{display:block;font:700 11px/14px var(--body);letter-spacing:.06em;margin-top:4px}
+.sticker:hover{animation:wiggle 280ms ease-in-out 1}
+.stage .sticker{top:-8px;right:0}
+@media (min-width:1024px){ .stage .sticker{top:-40px;right:-24px} }
+
+/* cats */
+.c-body{fill:var(--cat)}
+.c-shade{fill:var(--cat-shade)}
+.c-ink{fill:var(--ink)}
+.c-shadow{fill:var(--illo-shadow)}
+.c-coin{fill:var(--butter)}
+.c-mouth{fill:none;stroke:var(--ink);stroke-width:4.5;stroke-linecap:round}
+.cat-pink{--cat:var(--pink);--cat-shade:var(--illo-pink-shade)}
+.cat-matcha{--cat:var(--matcha);--cat-shade:var(--illo-matcha-shade)}
+.cat-lilac{--cat:var(--lilac);--cat-shade:var(--illo-lilac-shade)}
+.cat-bob{animation:bob 3s ease-in-out infinite}
+.cat-eyes{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+
+/* apa cerita */
+.story{display:grid;gap:32px}
+@media (min-width:1024px){ .story{grid-template-columns:5fr 7fr;gap:48px;align-items:start} }
+.story-copy{display:grid;gap:24px;min-width:0}
+.theme{background:var(--milk);border:var(--bw) solid var(--ink);border-radius:24px;padding:20px 24px;display:grid;gap:8px}
+.theme .q{font:700 clamp(22px,2.2vw,28px)/1.25 var(--display);font-stretch:88%;text-transform:uppercase;letter-spacing:-.01em}
+.theme .caption{color:var(--muted);text-transform:uppercase}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:640px){ .tiles{gap:16px} }
+.tile{position:relative;overflow:hidden;background:var(--ink);color:var(--paper);border-radius:24px;padding:16px;min-height:188px;display:flex;flex-direction:column;gap:8px}
+@media (min-width:640px){ .tile{padding:24px;min-height:220px} }
+.tile .k{position:relative;z-index:1;max-width:62%;font:700 12px/16px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--paper-dim)}
+.tile .v{position:relative;z-index:1;margin-top:auto;font:800 clamp(28px,6.2vw,60px)/1 var(--display);font-stretch:75%;letter-spacing:-.02em;color:var(--matcha);font-variant-numeric:tabular-nums}
+.tile .d{position:relative;z-index:1;font:400 14px/20px var(--body);color:var(--paper-dim)}
+.frag{position:absolute;pointer-events:none}
+.f-bowl{top:-44px;right:-44px;width:110px;height:110px;border-radius:50%;background:var(--matcha)}
+.f-bowl::after{content:"";position:absolute;inset:30px;border-radius:50%;background:var(--ink)}
+.f-ring{top:-40px;right:-40px;width:104px;height:104px;border-radius:50%;border:16px solid var(--pink)}
+.f-ears{top:-6px;right:-10px;width:96px;height:auto}
+.f-half{top:-52px;right:-20px;width:110px;height:110px;border-radius:50%;background:var(--lilac)}
+.f-half::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:var(--ink)}
+
+/* pocket */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.filter{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:9999px;border:2px solid var(--ink);background:var(--paper);color:var(--ink);font:700 13px/16px var(--body);letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:background-color 180ms,transform 100ms}
+.filter:hover{background:var(--milk)}
+.filter:active{transform:translateY(2px)}
+.filter svg{width:16px;height:16px;display:none}
+.filter[aria-pressed="true"]{background:var(--matcha)}
+.filter[aria-pressed="true"] svg{display:block}
+.count{color:var(--muted);margin-bottom:24px}
+.cards{display:grid;grid-template-columns:1fr;gap:24px}
+@media (min-width:640px){ .cards{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (min-width:1024px){ .cards{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.card{background:var(--paper);border:var(--bw) solid var(--ink);border-radius:24px;padding:24px;box-shadow:4px 4px 0 var(--ink);display:flex;flex-direction:column;gap:12px;min-width:0;transition:transform 280ms var(--ease-out),box-shadow 280ms var(--ease-out)}
+.card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.card .fig{font:700 clamp(22px,2.2vw,28px)/1.25 var(--display);font-stretch:88%;color:var(--matcha-deep);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px}
+.card ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.card .meta{margin-top:auto;background:var(--milk);border-radius:12px;padding:10px 14px;font:400 14px/20px var(--body);color:var(--muted)}
+.card .meta b{color:var(--ink)}
+
+/* checker */
+.tools{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:960px){ .tools{grid-template-columns:repeat(2,minmax(0,1fr))} }
+.tool{background:var(--milk);border:var(--bw) solid var(--ink);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+@media (min-width:640px){ .tool{padding:32px} }
+.field{display:grid;gap:8px;min-width:0}
+.field label,.radios legend{font:700 14px/20px var(--body)}
+.money{display:flex;align-items:center;background:var(--paper);border:2px solid var(--ink);border-radius:8px;min-height:56px;padding-inline:14px;gap:8px}
+.money:focus-within{outline:3px solid var(--ink);outline-offset:2px}
+.money span{font:700 20px/1 var(--display)}
+.money input{flex:1;min-width:0;width:100%;border:0;background:transparent;font:500 22px/1.2 var(--body);font-variant-numeric:tabular-nums;color:var(--ink);padding:12px 0}
+.money input:focus{outline:none}
+.hint{font:500 12px/16px var(--body);letter-spacing:.02em;color:var(--muted)}
+.radios{border:0;padding:0;margin:0;display:grid;gap:8px}
+.radio-row{display:flex;flex-wrap:wrap;gap:8px}
+.radio-row input{position:absolute;opacity:0;width:1px;height:1px}
+.radio-row label{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:9999px;border:2px solid var(--ink);background:var(--paper);font:700 13px/16px var(--body);letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:background-color 180ms}
+.radio-row label:hover{background:#F0F7E4}
+.radio-row input:checked + label{background:var(--matcha)}
+.radio-row input:focus-visible + label{outline:3px solid var(--ink);outline-offset:2px}
+.status{display:flex;gap:12px;align-items:flex-start;background:var(--paper);border:2px solid var(--ink);border-radius:12px;padding:16px}
+.status svg{width:24px;height:24px;flex:none;margin-top:2px}
+.status .word{display:block;font:700 14px/20px var(--body);letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.status.good .word,.status.good svg{color:var(--success)}
+.status.info .word,.status.info svg{color:var(--muted)}
+.tool .fine{margin-top:auto;font:500 12px/16px var(--body);letter-spacing:.02em;color:var(--muted)}
+
+/* real talk */
+.ink-panel{background:var(--ink);color:var(--paper);border:var(--bw) solid var(--ink);border-radius:32px;padding:32px 20px;display:grid;gap:40px;box-shadow:6px 6px 0 var(--matcha)}
+@media (min-width:640px){ .ink-panel{padding:48px 40px} }
+@media (min-width:1024px){ .ink-panel{grid-template-columns:1fr 1fr;gap:64px;padding:64px} }
+.ink-panel .copy{display:grid;gap:20px;align-content:start;min-width:0}
+.ink-panel p{color:var(--paper)}
+.ink-panel blockquote{margin:0;border-left:6px solid var(--pink);padding:4px 0 4px 20px;display:grid;gap:8px}
+.ink-panel blockquote p{font:700 clamp(22px,2.4vw,28px)/1.25 var(--display);font-stretch:90%}
+.ink-panel cite{font:500 12px/16px var(--body);letter-spacing:.04em;text-transform:uppercase;font-style:normal;color:var(--paper-dim)}
+.stats{display:grid;gap:24px;min-width:0}
+.big30{position:relative;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding-right:132px;min-height:128px}
+.big30 .n{font:800 clamp(72px,9vw,112px)/.9 var(--display);font-stretch:75%;letter-spacing:-.03em;color:var(--matcha)}
+.big30 .n sup{font-size:.4em;vertical-align:top;margin-left:2px}
+.big30 .l{font:700 14px/20px var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--paper);max-width:14ch}
+.big30 .sticker{top:-8px;right:0;transform:rotate(8deg);font-size:15px;line-height:1.05;background:var(--pink);color:var(--ink);border-color:var(--paper);box-shadow:4px 4px 0 var(--paper)}
+.box{border:2px solid #3A3D35;border-radius:24px;padding:20px;display:grid;gap:12px}
+.box h3{font-size:clamp(20px,2vw,24px);color:var(--paper)}
+.box .caption{color:var(--paper-dim)}
+.chart{width:100%;max-width:420px;height:auto;display:block}
+.chart text{font-family:var(--body)}
+.bar-track{height:28px;border-radius:9999px;background:#2A2D26;border:2px solid #3A3D35;overflow:hidden}
+.bar-fill{height:100%;width:57.6%;background:var(--pink);border-radius:9999px}
+.bar-legend{display:flex;justify-content:space-between;gap:12px;font:500 12px/16px var(--body);color:var(--paper-dim);letter-spacing:.02em}
+.box .val{font:800 40px/1 var(--display);font-stretch:78%;color:var(--pink);font-variant-numeric:tabular-nums}
+
+/* but hor */
+.duo{display:grid;gap:24px}
+@media (min-width:900px){ .duo{grid-template-columns:repeat(2,minmax(0,1fr))} }
+.duo .card{gap:16px}
+.flag{display:inline-flex;align-items:center;gap:8px;font:700 14px/20px var(--body);letter-spacing:.04em;text-transform:uppercase;background:var(--paper)}
+.flag svg{width:22px;height:22px}
+.flag.ok{color:var(--success)}
+.flag.warn{color:var(--warning)}
+
+/* last word */
+.promo{position:relative;display:grid;gap:24px;padding:40px 20px;border:var(--bw) solid var(--ink);border-radius:32px;background:var(--grain),linear-gradient(135deg,var(--pink),var(--lilac));box-shadow:6px 6px 0 var(--ink);overflow:hidden}
+@media (min-width:640px){ .promo{padding:56px 40px} }
+@media (min-width:1024px){ .promo{grid-template-columns:1.5fr 1fr;align-items:center;padding:64px} }
+.promo .copy{display:grid;gap:20px;min-width:0}
+.promo h2{font-size:clamp(40px,6vw,68px);line-height:1.02;font-stretch:78%;letter-spacing:-.02em}
+.promo p{font-weight:500}
+.promo .cat{width:min(100%,300px);justify-self:center}
+
+/* headlines */
+.heads{display:grid;gap:24px}
+@media (min-width:900px){ .heads{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.head-card{background:var(--paper);border:var(--bw) solid var(--ink);border-radius:24px;padding:24px;display:grid;gap:16px;align-content:start;box-shadow:4px 4px 0 var(--ink)}
+.head-card:nth-child(1){transform:rotate(-1.2deg)}
+.head-card:nth-child(2){transform:rotate(.8deg)}
+.head-card:nth-child(3){transform:rotate(-.6deg)}
+.head-card .h{font:800 clamp(24px,2.4vw,28px)/1.2 var(--display);font-stretch:85%;text-transform:uppercase;letter-spacing:-.01em}
+
+/* footer */
+.foot{border-top:var(--bw) solid var(--ink);background:var(--milk)}
+.foot .wrap{padding-block:48px;display:grid;gap:32px}
+@media (min-width:900px){ .foot .wrap{grid-template-columns:1fr 1.4fr} }
+.foot p{color:var(--muted)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.foot a{color:var(--matcha-deep);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;font-weight:500}
+.foot .src-title{font:700 14px/20px var(--body);letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px}
+
+/* motion */
+.rise{animation:rise 700ms var(--ease-out) both}
+.rise.d1{animation-delay:60ms}.rise.d2{animation-delay:120ms}.rise.d3{animation-delay:180ms}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes slap{0%{opacity:0;transform:scale(1.2) rotate(0deg)}60%{opacity:1;transform:scale(.96) rotate(-9deg)}100%{transform:scale(1) rotate(-8deg)}}
+@keyframes wiggle{0%,100%{rotate:0deg}33%{rotate:4deg}66%{rotate:-4deg}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.big30 .sticker{animation-name:slap8}
+@keyframes slap8{0%{opacity:0;transform:scale(1.2) rotate(0deg)}60%{opacity:1;transform:scale(.96) rotate(9deg)}100%{transform:scale(1) rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:1ms!important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" /><path d="M12 11v6M12 7.5v.01" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.5L2.8 19.5h18.4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4.5M12 17.2v.01" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M4 16l6-6 4 4 6-7M15 7h5v5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Matcha Neko home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 17 L11 5 Q12 2 14.5 4 L20 10 L25.5 4 Q28 2 29 5 L31 17 Z" fill="#121410" stroke="#121410" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="23" r="15" fill="#9FDB5E" stroke="#121410" stroke-width="2.5"/><circle cx="15" cy="23" r="2" fill="#121410"/><circle cx="25" cy="23" r="2" fill="#121410"/><path d="M17 28 Q20 30.5 23 28" fill="none" stroke="#121410" stroke-width="2" stroke-linecap="round"/></svg>
+      Matcha Neko
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#apa-cerita">Apa cerita?</a></li>
+        <li><a href="#pocket">Your pocket</a></li>
+        <li><a href="#checker">Checker</a></li>
+        <li><a href="#real-talk">Real talk</a></li>
+        <li><a href="#but-hor">But hor</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-secondary btn-sm" href="#checker">Check your band</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="wrap hero-wrap">
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="hero-chips rise">
+          <span class="chip chip-lilac">Budget 2027</span>
+          <span class="chip chip-paper">Tabled 9 Oct 2026</span>
+          <span class="chip chip-paper">5 min read</span>
+        </div>
+        <h1 class="rise d1" aria-label="Gaji naik, tax turun">
+          <span>Gaji naik.</span>
+          <span>Tax turun.</span>
+        </h1>
+        <div class="tagline rise d2">Deficit… still there lah</div>
+        <p class="lede rise d2">Malaysia's biggest budget ever is RM510 billion. Higher minimum wage, lower income tax, more cash aid. The one thing it doesn't fully fix is the gap between what the government spends and what it collects.</p>
+        <div class="hero-actions rise d3">
+          <a class="btn btn-primary" href="#checker">Check your tax band</a>
+          <a class="btn btn-secondary" href="#pocket">See the goodies</a>
+        </div>
+      </div>
+      <div class="stage rise d2">
+        <div class="bowl">
+          <svg class="cat-pink" viewBox="0 0 260 200" aria-hidden="true">
+            <ellipse class="c-shadow" cx="112" cy="187" rx="92" ry="9"/>
+            <g class="cat-bob">
+              <path class="c-body" d="M52 86 L58 40 Q60 30 69 36 L94 62 Z" stroke="var(--pink)" style="stroke:var(--cat)" stroke-width="10" stroke-linejoin="round"/>
+              <path class="c-shade" d="M148 86 L142 40 Q140 30 131 36 L106 62 Z" style="stroke:var(--cat-shade)" stroke-width="10" stroke-linejoin="round"/>
+              <path class="c-body" d="M100 58 C152 58 174 94 172 132 C170 168 142 180 100 180 C58 180 28 168 28 132 C26 94 48 58 100 58 Z"/>
+              <path class="c-shade" d="M138 66 C162 80 174 104 172 132 C170 168 142 180 100 180 C130 172 148 152 150 122 C152 98 148 80 138 66 Z"/>
+              <g class="cat-eyes"><circle class="c-ink" cx="80" cy="116" r="7"/><circle class="c-ink" cx="120" cy="116" r="7"/></g>
+              <path class="c-mouth" d="M90 134 Q100 143 110 134"/>
+            </g>
+            <rect class="c-coin" x="186" y="166" width="48" height="14" rx="7"/>
+            <rect class="c-coin" x="190" y="150" width="48" height="14" rx="7"/>
+            <rect class="c-coin" x="184" y="134" width="48" height="14" rx="7"/>
+            <rect class="c-coin" x="192" y="118" width="48" height="14" rx="7"/>
+          </svg>
+        </div>
+        <div class="sticker" aria-hidden="true">RM510 billion<small>Biggest ever</small></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="apa-cerita">
+    <div class="wrap story">
+      <div class="story-copy">
+        <h2>Apa cerita?</h2>
+        <p>Prime Minister and Finance Minister Anwar Ibrahim tabled the fifth MADANI Budget in the Dewan Rakyat on Friday, 9 October 2026. Spending goes up from RM470 billion this year to RM510 billion. Here are the numbers that matter.</p>
+        <div class="theme">
+          <span class="caption">This year's theme</span>
+          <span class="q">Reaching for the skies, while anchored on our values</span>
+        </div>
+      </div>
+      <div class="tiles">
+        <div class="tile">
+          <span class="frag f-bowl"></span>
+          <span class="k">Total budget</span>
+          <span class="v">RM510B</span>
+          <span class="d">Operating RM376.8B · Development RM83B</span>
+        </div>
+        <div class="tile">
+          <span class="frag f-ring"></span>
+          <span class="k">Revenue, projected</span>
+          <span class="v">RM380.8B</span>
+          <span class="d">No new taxes to widen the base</span>
+        </div>
+        <div class="tile">
+          <svg class="frag f-ears" viewBox="0 0 96 48" aria-hidden="true"><path d="M8 48 L20 8 Q23 0 30 6 L52 48 Z" fill="#F7F3EA"/><path d="M56 48 L68 8 Q71 0 78 6 L100 48 Z" fill="#FF7AAE"/></svg>
+          <span class="k">Fiscal deficit</span>
+          <span class="v">3.3%</span>
+          <span class="d">of GDP, down from 3.6% est. in 2026</span>
+        </div>
+        <div class="tile">
+          <span class="frag f-half"></span>
+          <span class="k">Growth forecast</span>
+          <span class="v">4.2–5.2%</span>
+          <span class="d">GDP growth for 2027</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pocket" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>So what for your pocket?</h2>
+        <p>This is the shiok part. Tap who you are to filter the goodies.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter goodies">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true"><svg aria-hidden="true"><use href="#i-check"/></svg>Everything</button>
+        <button class="filter" type="button" data-filter="work" aria-pressed="false"><svg aria-hidden="true"><use href="#i-check"/></svg>I'm working</button>
+        <button class="filter" type="button" data-filter="tax" aria-pressed="false"><svg aria-hidden="true"><use href="#i-check"/></svg>I pay tax</button>
+        <button class="filter" type="button" data-filter="aid" aria-pressed="false"><svg aria-hidden="true"><use href="#i-check"/></svg>I get STR</button>
+        <button class="filter" type="button" data-filter="drive" aria-pressed="false"><svg aria-hidden="true"><use href="#i-check"/></svg>I drive</button>
+        <button class="filter" type="button" data-filter="home" aria-pressed="false"><svg aria-hidden="true"><use href="#i-check"/></svg>Buying a home</button>
+        <button class="filter" type="button" data-filter="young" aria-pressed="false"><svg aria-hidden="true"><use href="#i-check"/></svg>Turning 18</button>
+      </div>
+      <p class="count caption" id="count" aria-live="polite">Showing all 6 goodies</p>
+
+      <div class="cards">
+        <article class="card" data-tags="work">
+          <div class="tags"><span class="chip chip-lilac">Workers</span></div>
+          <h3>Min wage RM2,000</h3>
+          <div class="fig">RM1,700 → RM2,000</div>
+          <p>A RM300 jump that covers more than 4 million workers. Some smaller businesses are exempted.</p>
+          <div class="meta"><b>Starts</b> June 2027</div>
+        </article>
+        <article class="card" data-tags="tax work">
+          <div class="tags"><span class="chip chip-butter">Taxpayers</span></div>
+          <h3>Tax turun</h3>
+          <div class="fig">−1 point, two bands</div>
+          <ul>
+            <li><span class="num">RM70,001–RM100,000</span> drops to 18%</li>
+            <li><span class="num">RM100,001–RM150,000</span> drops to 24%</li>
+            <li>Individual relief rises from <span class="num">RM9,000</span> to <span class="num">RM12,000</span></li>
+          </ul>
+          <div class="meta"><b>About 5 million</b> taxpayers get up to RM1,600 more to spend</div>
+        </article>
+        <article class="card" data-tags="aid young">
+          <div class="tags"><span class="chip chip-lilac">STR &amp; adults 18+</span></div>
+          <h3>SARA cash aid</h3>
+          <div class="fig">Up to RM150 / month</div>
+          <p>All STR recipients get up to RM1,800 a year, reaching up to 9 million people. Adults 18 and above without STR get RM100 twice through SARA Madani.</p>
+          <div class="meta"><b>Who</b> STR recipients, plus every adult via SARA Madani</div>
+        </article>
+        <article class="card" data-tags="drive">
+          <div class="tags"><span class="chip chip-butter">Drivers</span></div>
+          <h3>BUDI95 quota up</h3>
+          <div class="fig">300 litres / month</div>
+          <p>The subsidised petrol quota rises to 300 litres a month. More balik kampung, less worry.</p>
+          <div class="meta"><b>Applies to</b> the BUDI95 petrol quota</div>
+        </article>
+        <article class="card" data-tags="home">
+          <div class="tags"><span class="chip chip-lilac">First-home buyers</span></div>
+          <h3>No stamp duty</h3>
+          <div class="fig">Homes up to RM500,000</div>
+          <p>Full stamp duty exemption for first homes up to RM500,000, and a partial exemption up to RM750,000.</p>
+          <div class="meta"><b>Runs</b> 2027 to 2030</div>
+        </article>
+        <article class="card" data-tags="young">
+          <div class="tags"><span class="chip chip-butter">Turning 18</span></div>
+          <h3>EPF at 18, auto</h3>
+          <div class="fig">Age 18</div>
+          <p>Every citizen is automatically registered with EPF at 18. No forms, no queue, your retirement account just starts.</p>
+          <div class="meta"><b>Who</b> every Malaysian citizen</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="checker" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Check yourself lah</h2>
+        <p>Two quick checks. Your numbers stay on this page and aren't saved anywhere.</p>
+      </div>
+      <div class="tools">
+        <div class="tool">
+          <h3>Am I in a lower tax band?</h3>
+          <div class="field">
+            <label for="income">Your yearly chargeable income</label>
+            <div class="money"><span aria-hidden="true">RM</span><input id="income" type="text" inputmode="numeric" autocomplete="off" value="85,000" aria-describedby="income-hint"></div>
+            <span class="hint" id="income-hint">Example figure filled in. Type your own.</span>
+          </div>
+          <div class="status good" id="tax-out" aria-live="polite"></div>
+          <p class="fine">Checks the two bands cut in Budget 2027 only. It doesn't calculate your actual tax. General info, not tax advice.</p>
+        </div>
+        <div class="tool">
+          <h3>Do I get SARA?</h3>
+          <fieldset class="radios">
+            <legend>Which one is you?</legend>
+            <div class="radio-row">
+              <input type="radio" name="sara" id="sara-str" value="str" checked><label for="sara-str">I get STR</label>
+              <input type="radio" name="sara" id="sara-adult" value="adult"><label for="sara-adult">No STR, 18+</label>
+              <input type="radio" name="sara" id="sara-teen" value="teen"><label for="sara-teen">Under 18</label>
+            </div>
+          </fieldset>
+          <div class="status good" id="sara-out" aria-live="polite"></div>
+          <p class="fine">Based on the Budget 2027 speech as tabled. Payment dates and how to claim come later from the government.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="real-talk" style="padding-top:0">
+    <div class="wrap">
+      <div class="ink-panel on-ink">
+        <div class="copy">
+          <h2>The real talk</h2>
+          <p>For the rakyat, this budget is generous where it counts. A RM300 jump in the minimum wage and cash aid for millions put money in the hands of the people who spend it fastest.</p>
+          <p>But look at the scorecard. Salaries, pensions and debt interest alone eat most of operating spending. That leaves little room to manoeuvre, and the budget adds no new taxes to widen the revenue base.</p>
+          <blockquote>
+            <p>“A baby step in deficit reduction.”</p>
+            <cite>Lee Heng Guie, Socio-Economic Research Centre</cite>
+          </blockquote>
+          <p>So the gifts are real. The question is who pays for them later. Without broader revenue, the government is borrowing to cover the gap.</p>
+        </div>
+        <div class="stats">
+          <div class="big30">
+            <span class="n num">30<sup>th</sup></span>
+            <span class="l">Straight year of deficit</span>
+            <div class="sticker" aria-hidden="true">Happy pearl anni&shy;versary?</div>
+          </div>
+
+          <div class="box">
+            <h3>Deficit, % of GDP</h3>
+            <svg class="chart" viewBox="0 0 320 200" role="img" aria-labelledby="chart-t">
+              <title id="chart-t">Fiscal deficit falls from 3.6% of GDP in 2026 (estimate) to 3.3% in 2027</title>
+              <g stroke="#3A3D35" stroke-width="1">
+                <line x1="44" x2="310" y1="160" y2="160"/>
+                <line x1="44" x2="310" y1="125" y2="125"/>
+                <line x1="44" x2="310" y1="90" y2="90"/>
+                <line x1="44" x2="310" y1="55" y2="55"/>
+                <line x1="44" x2="310" y1="20" y2="20"/>
+              </g>
+              <g fill="#CFCBBF" font-size="11" text-anchor="end">
+                <text x="36" y="164">0%</text><text x="36" y="129">1%</text><text x="36" y="94">2%</text><text x="36" y="59">3%</text><text x="36" y="24">4%</text>
+              </g>
+              <rect x="80" y="34" width="72" height="126" rx="10" fill="#C3B2FF"/>
+              <rect x="200" y="44.5" width="72" height="115.5" rx="10" fill="#9FDB5E"/>
+              <g font-size="15" font-weight="700" text-anchor="middle" fill="#F7F3EA">
+                <text x="116" y="26">3.6%</text>
+                <text x="236" y="36">3.3%</text>
+              </g>
+              <g font-size="12" text-anchor="middle" fill="#CFCBBF">
+                <text x="116" y="180">2026 (est.)</text>
+                <text x="236" y="180">2027</text>
+              </g>
+            </svg>
+            <span class="caption">Down 0.3 points. Progress, but small.</span>
+          </div>
+
+          <div class="box">
+            <h3>Fixed costs</h3>
+            <span class="val">57.6%</span>
+            <div class="bar-track" role="img" aria-label="57.6% of operating spending"><div class="bar-fill"></div></div>
+            <div class="bar-legend"><span>Salaries, pensions, debt interest</span><span>Everything else</span></div>
+            <span class="caption">Share of operating spending that's already spoken for.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="but-hor" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>But hor…</h2>
+        <p>Before you grumble about the deficit, here's the other side.</p>
+      </div>
+      <div class="duo">
+        <article class="card">
+          <span class="flag ok"><svg aria-hidden="true"><use href="#i-up"/></svg>Still progress</span>
+          <h3>The case for slow</h3>
+          <p>Cutting the deficit too fast has its own cost. Slash spending hard while the cost of living is already pening-level, and you hurt growth and the same households the budget is trying to help.</p>
+          <p>The deficit is going down, and revenue for 2026 came in above the original projection. Slow and steady is still progress.</p>
+        </article>
+        <article class="card">
+          <span class="flag warn"><svg aria-hidden="true"><use href="#i-warn"/></svg>Worth watching</span>
+          <h3>The SME worry</h3>
+          <p>Lee also flags a business-side worry. A RM2,000 wage floor and a RM2,500 graduate baseline could make SMEs think twice about hiring fresh staff.</p>
+          <div class="meta"><b>If you're job hunting</b> as a fresh grad, this is the one to keep an eye on.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="last-word" style="padding-top:0">
+    <div class="wrap">
+      <div class="promo">
+        <div class="copy">
+          <h2>Gaji naik, tax turun, enjoy lah.</h2>
+          <p>Check whether you're now in a lower tax band, and whether you qualify for SARA. Just remember the deficit is still there, quietly waiting for Budget 2028.</p>
+          <div><a class="btn btn-secondary" href="#checker">Run the checker</a></div>
+        </div>
+        <svg class="cat cat-matcha" viewBox="0 0 200 200" aria-hidden="true">
+          <ellipse class="c-shadow" cx="100" cy="187" rx="66" ry="9" style="fill:rgba(18,20,16,.14)"/>
+          <g class="cat-bob">
+            <path class="c-body" d="M52 86 L58 40 Q60 30 69 36 L94 62 Z" style="stroke:var(--cat)" stroke-width="10" stroke-linejoin="round"/>
+            <path class="c-shade" d="M148 86 L142 40 Q140 30 131 36 L106 62 Z" style="stroke:var(--cat-shade)" stroke-width="10" stroke-linejoin="round"/>
+            <path class="c-body" d="M100 58 C152 58 174 94 172 132 C170 168 142 180 100 180 C58 180 28 168 28 132 C26 94 48 58 100 58 Z"/>
+            <path class="c-shade" d="M138 66 C162 80 174 104 172 132 C170 168 142 180 100 180 C130 172 148 152 150 122 C152 98 148 80 138 66 Z"/>
+            <g class="cat-eyes"><circle class="c-ink" cx="80" cy="116" r="7"/><circle class="c-ink" cx="120" cy="116" r="7"/></g>
+            <path class="c-mouth" d="M90 134 Q100 143 110 134"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="headlines" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Headlines we almost ran</h2>
+      </div>
+      <div class="heads">
+        <div class="head-card"><span class="chip chip-lilac" style="justify-self:start">Irony</span><span class="h">Budget deficit turns 30. Happy pearl anniversary?</span></div>
+        <div class="head-card"><span class="chip chip-butter" style="justify-self:start">Theme twist</span><span class="h">Reaching for the skies, on credit lah</span></div>
+        <div class="head-card"><span class="chip chip-lilac" style="justify-self:start">Reversal</span><span class="h">RM510 billion budget: everyone gets something, including the bill</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div style="display:grid;gap:12px">
+      <a class="logo" href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 17 L11 5 Q12 2 14.5 4 L20 10 L25.5 4 Q28 2 29 5 L31 17 Z" fill="#121410" stroke="#121410" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="23" r="15" fill="#9FDB5E" stroke="#121410" stroke-width="2.5"/><circle cx="15" cy="23" r="2" fill="#121410"/><circle cx="25" cy="23" r="2" fill="#121410"/><path d="M17 28 Q20 30.5 23 28" fill="none" stroke="#121410" stroke-width="2" stroke-linecap="round"/></svg>
+        Matcha Neko
+      </a>
+      <p>Big news, small sips. Explainers for Malaysians who'd rather read this in the bubble tea queue.</p>
+      <p class="caption">General info only, not financial or tax advice. Figures from Budget 2027 as tabled on 9 October 2026.</p>
+    </div>
+    <div>
+      <div class="src-title">Sources</div>
+      <ul>
+        <li><a href="https://mof.gov.my/portal/en/news/speech/speech-the-fifth-madani-budget-2027" target="_blank" rel="noopener">Ministry of Finance: Budget 2027 speech</a></li>
+        <li><a href="https://www.businesstoday.com.my/2026/10/09/budget-2027-spending-rises-to-rm510-billion-as-govt-targets-3-3-deficit/" target="_blank" rel="noopener">Business Today: Spending rises to RM510 billion, 3.3% deficit</a></li>
+        <li><a href="https://www.thestar.com.my/business/business-news/2026/10/13/budget-2027-are-we-spending-on-the-right-things" target="_blank" rel="noopener">The Star: Budget 2027, are we spending on the right things? (Lee Heng Guie)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Goodies filter
+  var filters = document.querySelectorAll('.filter');
+  var cards = document.querySelectorAll('#pocket .card');
+  var count = document.getElementById('count');
+  filters.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.dataset.filter;
+      filters.forEach(function(b){ b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      var shown = 0;
+      cards.forEach(function(c){
+        var on = f === 'all' || c.dataset.tags.split(' ').indexOf(f) > -1;
+        c.hidden = !on; if (on) shown++;
+      });
+      count.textContent = f === 'all' ? 'Showing all 6 goodies' : 'Showing ' + shown + ' of 6 goodies for you';
+    });
+  });
+
+  // Status renderer
+  function status(el, kind, word, text){
+    var icon = kind === 'good' ? '#i-check' : '#i-info';
+    el.className = 'status ' + kind;
+    el.innerHTML = '<svg aria-hidden="true"><use href="' + icon + '"/></svg><div><span class="word">' + word + '</span>' + text + '</div>';
+  }
+
+  // Tax band checker
+  var income = document.getElementById('income');
+  var taxOut = document.getElementById('tax-out');
+  function checkTax(){
+    var n = parseInt(String(income.value).replace(/[^0-9]/g, ''), 10);
+    if (!n) { status(taxOut, 'info', 'Waiting for you', 'Type your yearly chargeable income to see your band.'); return; }
+    if (n >= 70001 && n <= 100000) {
+      status(taxOut, 'good', 'Yes, lower band', 'You’re in the RM70,001–RM100,000 band, which drops 1 point to 18%. Individual relief also rises to RM12,000.');
+    } else if (n >= 100001 && n <= 150000) {
+      status(taxOut, 'good', 'Yes, lower band', 'Your top band is RM100,001–RM150,000, now 24%. The RM70,001–RM100,000 slice of your income also drops to 18%.');
+    } else if (n > 150000) {
+      status(taxOut, 'good', 'Partly', 'Your top band isn’t one of the two being cut. But your income between RM70,001 and RM150,000 still gets the 1-point cut.');
+    } else {
+      status(taxOut, 'info', 'No rate change', 'Your band isn’t one of the two being cut. The individual relief still rises from RM9,000 to RM12,000, which lowers the income you’re taxed on.');
+    }
+  }
+  income.addEventListener('input', function(){
+    var digits = income.value.replace(/[^0-9]/g, '').slice(0, 10);
+    income.value = digits ? Number(digits).toLocaleString('en-MY') : '';
+    checkTax();
+  });
+  checkTax();
+
+  // SARA checker
+  var saraOut = document.getElementById('sara-out');
+  function checkSara(){
+    var v = (document.querySelector('input[name="sara"]:checked') || {}).value;
+    if (v === 'str') status(saraOut, 'good', 'Yes, SARA', 'Up to RM150 a month through SARA. That’s up to RM1,800 a year.');
+    else if (v === 'adult') status(saraOut, 'good', 'Yes, SARA Madani', 'Adults 18 and above without STR get RM100, paid twice, through SARA Madani.');
+    else status(saraOut, 'info', 'Not yet', 'No SARA payment for under-18s. When you turn 18 you’re automatically registered with EPF.');
+  }
+  document.querySelectorAll('input[name="sara"]').forEach(function(r){ r.addEventListener('change', checkSara); });
+  checkSara();
+})();
+</script>
+</body>
+</html>
