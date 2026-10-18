@@ -7,7 +7,7 @@
 <meta name="description" content="Muhammad Yusri Abdullah: Senior Product Analyst and Product Owner for AG ONE Hire, white paper author, speaker and trainer, Kuala Lumpur.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Cinzel:wght@500;600&display=swap">
 <style>
 /* Layout: brand system of matte royal-blue grounds, glossy blue/yellow controls and clean white panels.
    Order puts the White Paper and Projects first, then media, story, proof and contact. */
@@ -1056,6 +1056,36 @@ footer .av img{border-color:var(--bg)!important}
 .folio .chev{width:15%!important;opacity:.85!important;right:-3%!important;top:34%!important}
 .st-card .ph .av img{position:static!important;inset:auto!important;width:100%!important;height:100%!important;z-index:auto!important;transform:none!important;padding:0!important;filter:none!important}
 .st-card .st-k b{text-transform:none!important}
+
+/* ===== Book Two: The Painted Cake, in its own cover colours (night green, antique gold, cream) ===== */
+.book.book2{background:#15231F!important;background-image:radial-gradient(700px 380px at 20% 30%,rgba(200,170,110,.16),transparent 65%),linear-gradient(180deg,#15231F,#0D1412)!important;color:#F0E6D2!important}
+.book.book2::after{background:#C8AA6E!important;opacity:.07!important;clip-path:polygon(50% 8%,100% 100%,0 100%)!important}
+.book.book2::before{content:"";position:absolute;inset:16px;border:1px solid rgba(200,170,110,.32);pointer-events:none}
+.book.book2 h2{font-family:"Cinzel",var(--display)!important;font-weight:500!important;letter-spacing:.06em!important;color:#F0E6D2!important;text-transform:uppercase;font-size:clamp(2.1rem,4.6vw,3.4rem)!important;line-height:1.05!important}
+.book.book2 h2 em{font-family:"Cinzel",var(--display)!important;display:block;font-style:normal!important;color:#C8AA6E!important;font-size:1.35em;letter-spacing:.1em}
+.book.book2 .kicker{color:#C8AA6E!important}.book.book2 .kicker::before{background:#C8AA6E!important;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)!important;width:10px!important;height:10px!important}
+.book.book2 .by,.book.book2 p.bl{color:#E3D6B8!important}
+.book.book2 blockquote{border-color:#C8AA6E!important;color:#F0E6D2!important;background:rgba(200,170,110,.08)!important;font-family:"Cinzel",var(--display)!important;font-size:1.15rem!important;font-style:normal!important;letter-spacing:.04em}
+.book.book2 blockquote small{color:#C8B98F!important;font-family:var(--body)!important;letter-spacing:0;font-style:italic!important}
+.book.book2 .book-parts li{background:transparent!important;border:1px solid rgba(200,170,110,.5)!important;color:#F0E6D2!important;border-radius:2px!important}
+.book.book2 .book-parts li b{background:#C8AA6E!important;color:#0D1412!important}
+.book.book2 .btn.y{background:#C8AA6E!important;color:#0D1412!important;border-color:#C8AA6E!important}
+.book.book2 .btn.y:hover{background:#E0C88F!important}
+.book.book2 .btn.ghost{background:transparent!important;color:#F0E6D2!important;border:1px solid rgba(240,230,210,.5)!important}
+.book.book2 .book-cv{background:#0D1412!important;transform:rotate(2deg)!important;border:1px solid rgba(200,170,110,.4)}
+.book.book2 .book-in{direction:rtl}.book.book2 .book-in>*{direction:ltr}
+@media (max-width:900px){.book.book2 .book-in{direction:ltr}}
+/* reader styling for book two */
+.br[data-book="2"] .br-book{background:#FBF6EC}
+.br .poem{margin:1.6em 0;padding:1.1em 1em;border:1px solid #C8AA6E;text-align:center;break-inside:avoid}
+.br .poem .pt{font:600 .62rem/1 var(--head);letter-spacing:.24em;text-transform:uppercase;color:#7C6230;margin:0}
+.br .poem h4{font:500 1.2rem/1.2 "Cinzel",var(--display);margin:.3em 0 .8em;letter-spacing:.04em}
+.br .poem p{font-style:italic;margin:0 0 .8em}
+.br .prov{margin:1.4em 0;padding:.9em 1.1em;background:#15231F;color:#F0E6D2;border:1px solid #C8AA6E;break-inside:avoid;border-radius:2px}
+.br .prov p{margin:0;color:#F0E6D2}.br .prov p:first-child{font:500 1.05em/1.4 "Cinzel",var(--display);letter-spacing:.02em}.br .prov p+p{font-style:italic;color:#D8CDB4;margin-top:4px}
+.br .fin{text-align:center;color:#7C6230;font:500 1rem/1.5 "Cinzel",var(--display);margin:2em 0 1em}
+.br .sign{text-align:right;font-style:italic;color:#7C6230}
+.br[data-book="2"] h3{font-family:"Cinzel",var(--display)!important;font-weight:500!important;letter-spacing:.03em}
 </style>
 </head>
 <body>
@@ -1068,7 +1098,7 @@ footer .av img{border-color:var(--bg)!important}
     <a class="brand" href="#top"><span class="av"><img src="img/avatar.jpg" width="240" height="240" fetchpriority="high" decoding="async" data-hd="img/avatar.jpg" alt="Yusri Abdullah"></span><span class="bt"><b>Yusri <span>Abdullah</span></b><small>Product · Author · Speaker</small></span></a>
     <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="links"><span></span>Menu</button>
     <div class="links" id="links">
-      <a href="#projects">Work</a><a href="#white-paper">Articles</a><a href="#book">Book</a><a href="#focus">Focus</a><a href="#events">Events</a><a href="#moments">Moments</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="#projects">Work</a><a href="#white-paper">Articles</a><a href="#book">Books</a><a href="#focus">Focus</a><a href="#events">Events</a><a href="#moments">Moments</a><a href="#about">About</a><a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -1092,7 +1122,7 @@ footer .av img{border-color:var(--bg)!important}
       <div class="stage"><span class="outline"></span><span class="panel"></span><span class="chev"></span><img class="cut" src="img/portrait-cut.webp" width="671" height="994" fetchpriority="high" decoding="async" data-hd="hd/portrait.jpg" alt="Muhammad Yusri Abdullah in a dark suit"></div>
       <a class="tag t1" href="#projects"><i>10</i><span><b>Projects</b><small>HRMS, hiring, data</small></span></a>
       <a class="tag t2" href="#white-paper"><i>02</i><span><b>White papers</b><small>CRM · market strategy</small></span></a>
-      <a class="tag t3" href="#book"><i>14</i><span><b>Chapter book</b><small>Hard Times Build Resilience</small></span></a>
+      <a class="tag t3" href="#book"><i>02</i><span><b>Books</b><small>Hard Times · The Painted Cake</small></span></a>
     </div>
   </div>
   <svg class="hero-line" viewBox="0 0 1600 140" preserveAspectRatio="none" aria-hidden="true"><g class="grid"><line x1="0" y1="40" x2="1600" y2="40"/><line x1="0" y1="80" x2="1600" y2="80"/><line x1="0" y1="120" x2="1600" y2="120"/></g><polyline class="ln" points="0,62 240,48 420,104 560,86 720,128 900,66 1060,86" stroke="currentColor"/><polyline class="ln" points="1060,86 1280,36 1560,14" stroke="#D4A21A"/></svg>
@@ -1113,7 +1143,7 @@ footer .av img{border-color:var(--bg)!important}
     <div class="st-grid">
       <a class="st-card rv" href="#projects"><span class="ph"><span class="av"><img src="img/avatar.jpg" width="240" height="240" fetchpriority="high" decoding="async" data-hd="img/avatar.jpg" alt=""></span><span><b>yusri.abdullah</b><small>Kuala Lumpur, Malaysia</small></span><span class="no">01 · Work</span></span><div class="st-m"><img src="img/ag-expo.jpg" width="960" height="720" loading="lazy" decoding="async" data-hd="hd/ag-expo.jpg" alt=""><div class="st-b"><h3>Products &amp; projects</h3><div class="st-k"><span><b>10x</b><span>delivery</span></span><span><b>−70%</b><span>HR admin</span></span></div><p>AG ONE Hire, the Intelligence Workforce System, dashboards and programmes.</p><span class="st-go">View case studies</span></div></div><span class="pf" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.2-6.4A8 8 0 0 1 20 12zm0 0v8l-3-2.5"/></svg><svg viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3zM10 13l5-5"/></svg><svg class="bm" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg></span></a>
       <a class="st-card rv" href="#white-paper"><span class="ph"><span class="av"><img src="img/avatar.jpg" width="240" height="240" fetchpriority="high" decoding="async" data-hd="img/avatar.jpg" alt=""></span><span><b>yusri.abdullah</b><small>Kuala Lumpur, Malaysia</small></span><span class="no">02 · Articles</span></span><div class="st-m"><img src="img/wp-crm.jpg" width="598" height="844" loading="lazy" decoding="async" data-hd="img/wp-crm.jpg" alt=""><div class="st-b"><h3>White papers</h3><p>CRM as a sociotechnical system, and the electric vehicle race between Tesla and BYD.</p><span class="st-go">Read the papers</span></div></div><span class="pf" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.2-6.4A8 8 0 0 1 20 12zm0 0v8l-3-2.5"/></svg><svg viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3zM10 13l5-5"/></svg><svg class="bm" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg></span></a>
-      <a class="st-card st-book rv" href="#book"><span class="ph"><span class="av"><img src="img/avatar.jpg" width="240" height="240" fetchpriority="high" decoding="async" data-hd="img/avatar.jpg" alt=""></span><span><b>yusri.abdullah</b><small>Kuala Lumpur, Malaysia</small></span><span class="no">03 · Book</span></span><div class="st-m"><img src="img/book-cover.jpg" width="560" height="840" loading="lazy" decoding="async" data-hd="hd/book-cover.jpg" alt=""><div class="st-b"><h3>Hard Times Build Resilience</h3><p>A true story in fourteen chapters. Read it right here, page by page.</p><span class="st-go">Start reading</span></div></div><span class="pf" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.2-6.4A8 8 0 0 1 20 12zm0 0v8l-3-2.5"/></svg><svg viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3zM10 13l5-5"/></svg><svg class="bm" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg></span></a>
+      <a class="st-card st-book rv" href="#book"><span class="ph"><span class="av"><img src="img/avatar.jpg" width="240" height="240" fetchpriority="high" decoding="async" data-hd="img/avatar.jpg" alt=""></span><span><b>yusri.abdullah</b><small>Kuala Lumpur, Malaysia</small></span><span class="no">03 · Books</span></span><div class="st-m"><img src="img/book-cover.jpg" width="560" height="840" loading="lazy" decoding="async" data-hd="hd/book-cover.jpg" alt=""><div class="st-b"><h3>Two books</h3><p>Hard Times Build Resilience, and my new novel The Painted Cake. Read both right here, page by page.</p><span class="st-go">Start reading</span></div></div><span class="pf" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.2-6.4A8 8 0 0 1 20 12zm0 0v8l-3-2.5"/></svg><svg viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3zM10 13l5-5"/></svg><svg class="bm" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg></span></a>
     </div>
   </div>
 </section>
@@ -1239,6 +1269,23 @@ footer .av img{border-color:var(--bg)!important}
   </div>
 </section>
 
+<section class="sec book book2" id="book-two">
+  <div class="wrap book-in">
+    <figure class="book-cv"><img src="img/cake-cover.jpg" width="600" height="901" loading="lazy" decoding="async" data-hd="hd/cake-cover.jpg" alt="Cover of The Painted Cake by Yushi: a boy on a hill holds up a painted cake below a rising sun"></figure>
+    <div>
+      <p class="kicker">My second book · Literary fiction</p>
+      <h2>The Painted <em>Cake</em></h2>
+      <p class="by">Written as Yushi · Little by Little, a Hill · Book One</p>
+      <p class="bl">In a village where the paddy bows to the wind, a boy who was told he was not of the blood learns to carry his mother, his hunger and his vow, and, little by little, to raise a hill of his own. A coming-of-age story on belonging, motherhood, resilience, faith and education.</p>
+      <blockquote>&ldquo;Sedikit-sedikit, lama-lama jadi bukit.&rdquo;<small>Little by little, in time, it becomes a hill.</small></blockquote>
+      <ul class="book-parts"><li><b>12</b>Chapters</li><li><b>13</b>Original poems</li><li><b>14</b>Malay proverbs</li></ul>
+      <div class="cta2">
+        <button type="button" class="btn y" id="br-open2">Read the book here</button>
+        <a class="btn ghost" href="https://claude.ai/artifact/RCeqVrr8DCtX5petfAD8eV" target="_blank" rel="noopener">Open full ebook ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="sec focus" id="focus">
   <div class="wrap">
     <div class="sec-head"><div><p class="kicker">What I focus on</p><h2>HRMS, Recruitment &amp; Talent, <em>redefined</em></h2></div><p>I build the systems behind the whole people journey: how an organisation finds talent, brings it in, runs it day to day and helps it grow, until the day someone retires.</p></div>
@@ -1861,6 +1908,155 @@ footer .av img{border-color:var(--bg)!important}
 <p>He is an optimist who sees problems as opportunities: passionate, adaptable and energetic, equally effective alone or in a team, and always eager to take on a new challenge.</p>
 <p><strong>Connect with the author</strong><br>Portfolio: <a href="https://claude.ai/artifact/MPv8jLR6ZPoxqcmKJ6mmnk" target="_blank" rel="noopener">https://claude.ai/artifact/MPv8jLR6ZPoxqcmKJ6mmnk</a><br>LinkedIn: <a href="https://www.linkedin.com/in/yushabdullah" target="_blank" rel="noopener">https://www.linkedin.com/in/yushabdullah</a><br>YouTube: <a href="https://www.youtube.com/@MonsiuerYush" target="_blank" rel="noopener">https://www.youtube.com/@MonsiuerYush</a></p>
 </section></template>
+<template id="br-src2"><section class="chap" id="bibliographic-note"><h3>Bibliographic Note</h3>
+<p>The Painted Cake — Little by Little, a Hill, Book One.</p>
+<p>Written by Muhammad Yusri Abdullah, under the commercial name Yushi.</p>
+</section>
+<section class="chap" id="prologue"><h3>Prologue</h3>
+<blockquote class="qt"><p>"All the world's a stage, and all the men and women merely players."</p><cite>William Shakespeare, As You Like It</cite></blockquote>
+<p>In a land of monsoon evenings and paddy fields that bowed to the wind, there lived a man who had learned early that a life is not given whole. It is gathered, as a fisherman gathers his net, knot by patient knot. His name was Ilham, which in the old tongue means inspiration, though for many years he could not have told you why.</p>
+<p>The elders of his land had a saying: Sedikit-sedikit, lama-lama jadi bukit. Little by little, in time, it becomes a hill. And so it was with Ilham, whose story began not with thunder, but with small things.</p>
+<div class="poem"><p class="pt">Poem</p><h4>The Net</h4><p>Not given whole, but gathered slow,<br>a knot for every tide;<br>the net grows strong from what we owe<br>to those who stood beside.</p><p>So read these pages, stone by stone,<br>a hill from dust and rain;<br>no man arrives where he is known<br>except by roads of pain.</p></div>
+</section>
+<section class="chap" id="chapter-1-the-borrowed-cradle"><p class="kick">Chapter 1</p><h3>The Borrowed Cradle</h3>
+<blockquote class="qt"><p>"We are all of us stars, and we deserve to twinkle."</p><cite>Marilyn Monroe</cite></blockquote>
+<p>Ilham was born in a small village where the paddy fields met the sky, though his roots lay across the northern border, in the Land of the Free. The family that raised him was not the family that bore him. He did not know this at first. Children seldom question the arms that hold them.</p>
+<p>But villages have long memories and short mercies. The whisper came early, and it came often: He is not of our blood. Each time it fell on him like rain on a roof without eaves. He began to wonder, in the silent way of small boys, why he was here at all, and why he was still here.</p>
+<p>Then, once in a while, strangers came. A woman with eyes he somehow knew. A boy who wore his own face, a few years older. They sat with him, smiled, touched his hair. Later he would learn that she was the mother who bore him, and the boy was his brother, one of three siblings scattered like seeds on the wind. They came, and then, like morning mist over the padi, they were gone, and they never came again.</p>
+<p>He kept those visits as a beggar keeps gold, turning them over in his memory long after their light had faded. Even as a grown man, a quiet ache would rise in him: It was not fair. Where do I belong in this world?</p>
+<p>Yet the cradle he was given, though borrowed, was warm. Air dicincang tidak akan putus. Water cut with a blade is never truly divided.</p>
+<blockquote class="qt"><p>"The wound is the place where the Light enters you."</p><cite>Rumi</cite></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Visitors</h4><p>They came like rain in the dry season,<br>a mother's face, a brother's hand;<br>they gave no word, they left no reason,<br>and vanished north, to the free land.</p><p>The boy still waits beside the door<br>though he has long since learned to stand;<br>some hearts are built to ache for more,<br>and some are built to understand.</p></div>
+</section>
+<section class="chap" id="chapter-2-the-little-merchant"><p class="kick">Chapter 2</p><h3>The Little Merchant</h3>
+<blockquote class="qt"><p>"Whatever you can do, or dream you can, begin it. Boldness has genius, power, and magic in it."</p><cite>attributed to Johann Wolfgang von Goethe</cite></blockquote>
+<p>Long before he knew the words profit or ledger, Ilham had the instincts of a merchant. At seven he sold fruit through the village lanes, holding each mango up to the light as though it were a jewel. At ten he stood at a little roadside stall flipping burgers while the evening traffic hummed past. At night, by the glow of a kerosene lamp, he counted his coins and kept careful sums: the first accounts of a life that would one day be measured in larger numbers.</p>
+<blockquote class="prov"><p lang="ms">Di mana ada kemahuan, di situ ada jalan.</p><p>Where there is a will, there is a way.</p></blockquote>
+<p>But a small flame draws moths as well as admirers. Some of his cousins and nieces watched the busy little boy with narrowed eyes. Their words turned to quarrels, and the quarrels sometimes turned cruel. His grandmother, who might have shielded him, had already gone to her rest, and on the worst of those days no one came to his side. Once, in the middle of a shop, he faced a jeering cousin and declared, If you want to fight me, then fight me in front of my father and yours! The anger that rose in him that day was new and hard, like the first frost on soft ground.</p>
+<p>His mother, wiser than all of them, took his face in her hands. Do not mix with them, my son. Focus on yourself. Then she moved him to a new school, and a new page turned.</p>
+<blockquote class="prov"><p lang="ms">Jauhi orang yang dengki, dekati orang yang ikhlas.</p><p>Keep away from the envious; draw near to the sincere.</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Mango Seller</h4><p>A boy, a basket, and the sun,<br>a coin for every fruit he sold;<br>he did not know what he'd begun:<br>he only knew his hands could hold.</p><p>Let envy bark along the lane,<br>let cousins sneer and doors be shut;<br>the merchant counts his loss and gain<br>and plants the seed inside the nut.</p></div>
+</section>
+<section class="chap" id="chapter-3-the-river-that-gave-him-back"><p class="kick">Chapter 3</p><h3>The River That Gave Him Back</h3>
+<blockquote class="qt"><p>"Childhood is the kingdom where nobody dies."</p><cite>Edna St. Vincent Millay</cite></blockquote>
+<p>There is a memory older than the others, shining like river water in the afternoon sun. Ilham was six. Without a word to his mother, he slipped away with his friends down the muddy path to the river. He loved water the way other children love sweets, and he plunged in laughing.</p>
+<p>Then the current took his breath. Water filled his throat, the sky tilted, and for a moment the whole world went quiet and green. A friend's hand reached down through the water, caught him, and hauled him back into the light, coughing and alive.</p>
+<p>The mothers came running, scolding all the way. Why don't you ever listen? There were sharp words and a smack or two, but beneath the scolding ran a love so fierce it frightened them. Years later he would smile at the memory: They cared for us. Oh, how they cared.</p>
+<p>For it was a village that raised him. When his mother went out to work, her friends fed him and watched over him. They were angels without wings, sent quietly to fill the gaps his father left. And at school, his truest friends were mostly girls, who listened when the boys only wanted to wrestle and run. He had no brothers beside him, yet he was never wholly alone.</p>
+<blockquote class="prov"><p lang="ms">Bagai aur dengan tebing.</p><p>Like the bamboo and the riverbank, each holding the other up.</p></blockquote>
+<blockquote class="qt"><p>"It takes a village to raise a child."</p><cite>African proverb</cite></blockquote>
+<p>Now, as a grown man, he looks back on that kingdom of childhood and finds the adult world a very different country.</p>
+<div class="poem"><p class="pt">Poem</p><h4>The River</h4><p>The river took me for a breath<br>and gave me back a boy;<br>I learned how close we live to death<br>and how close death to joy.</p><p>A friend's hand in the green below,<br>a mother's voice above:<br>I did not drown. And now I know<br>the other name of love.</p></div>
+</section>
+<section class="chap" id="chapter-4-the-lioness"><p class="kick">Chapter 4</p><h3>The Lioness</h3>
+<blockquote class="qt"><p>"A mother's arms are made of tenderness, and children sleep soundly in them."</p><cite>Victor Hugo</cite></blockquote>
+<p>Every morning, before the sun had lifted itself above the coconut palms, Mak was already awake. Rice steamed in the pot. His school shirt lay pressed and folded. Her hands, rough from labour, smoothed his hair before she sent him into the world. She gave him everything she had, and Ilham, the boy who did not share her blood, grew up knowing beyond any doubt that he was beloved.</p>
+<blockquote class="prov"><p lang="ms">Kasih ibu membawa ke syurga.</p><p>A mother's love carries one to paradise.</p></blockquote>
+<p>The world beyond her doorway was less kind. At school a boy took Ilham for easy prey, sensing in him something soft. When her son came home with his sorrow, Mak rose like a lioness. She marched to the boy and demanded, Why do you torment my child? Then she went straight to the boy's father.</p>
+<p>What followed was a strange and beautiful thing. The two families, once at odds, sat down together and made peace. The tormentor became a friend of the household, and in the years of high school he became Ilham's shield, standing between him and anyone who meant him harm.</p>
+<blockquote class="qt"><p>"Do I not destroy my enemies when I make them my friends?"</p><cite>Abraham Lincoln</cite></blockquote>
+<blockquote class="prov"><p lang="ms">Air yang tenang jangan disangka tiada buaya.</p><p>Do not assume still water has no crocodiles; and do not assume a hard heart cannot soften.</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>Mak</h4><p>She did not carry me nine months,<br>she carried me for life;<br>she fed me rice and sang me once<br>through every kind of strife.</p><p>And when the world came at her son<br>with fist and sneer and shame,<br>she stood, a lioness, and won,<br>and called my enemy by name.</p></div>
+</section>
+<section class="chap" id="chapter-5-the-barred-door"><p class="kick">Chapter 5</p><h3>The Barred Door</h3>
+<blockquote class="qt"><p>"Courage is not the absence of fear, but rather the judgement that something else is more important than fear."</p><cite>Ambrose Redmoon</cite></blockquote>
+<p>The house had never been quiet. Since Ilham was small, his father and mother had fought, and his father's temper burned hot and quick, like dry grass in the dry season. The boy learned to read the weather of a room before he learned to read his schoolbooks.</p>
+<p>One night, Mak walked the long road to buy rice, for the shop was far and the sack was heavy. She returned late beneath the stars to find every door of the house barred against her. Ilham crept to the latch in the dark and eased it open, inch by inch, to let his mother in.</p>
+<p>His father's fury broke like a storm. Hard words fell on the boy, and when that fury turned toward his mother, Ilham stepped between them, a slender reed facing the gale. He held his ground. He did not bend.</p>
+<p>Not long after, in Ilham's sixteenth year, the marriage broke. His father and mother no longer spoke with one voice, and the house split like a dry riverbank in the monsoon. Mak was wounded to the bone. When his father asked whom he would live with, Ilham answered without a heartbeat's pause: My mother. She is everything to me.</p>
+<p>So the two of them carried their lives to a small house beside a river. It was a humble roof, but it was theirs.</p>
+<blockquote class="prov"><p lang="ms">Bumi mana yang tidak ditimpa hujan.</p><p>Upon which earth does the rain not fall?</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Latch</h4><p>A latch, a hand, a midnight door,<br>a mother in the cold;<br>a boy who'd never known before<br>how heavy hearts can hold.</p><p>He chose her then, he chose her still,<br>through every storm and shame;<br>some loves are born, and some are will,<br>and both deserve the name.</p></div>
+</section>
+<section class="chap" id="chapter-6-the-fence-that-ate-the-rice"><p class="kick">Chapter 6</p><h3>The Fence That Ate the Rice</h3>
+<blockquote class="qt"><p>"Be kind, for everyone you meet is fighting a hard battle."</p><cite>attributed to Ian Maclaren</cite></blockquote>
+<p>Ilham was away at his school hostel when word came: Mak had fallen, and her arm was broken. He went straight to his warden. Please, let me go home. My mother needs me.</p>
+<p>That week, for the first time in his life, he stood at the stove. His hands were clumsy and the soup was simple, but no feast in any palace was ever served with more love. He fed her, washed the pots, and watched over her as she had once watched over him. For the first time, he felt it: I can protect my mother.</p>
+<p>But fate was not finished. In time he discovered that a woman his mother had called a friend had been working quietly behind her back, and had taken her place at his father's side. Of all the wounds, this one cut deepest, because it came from a hand Mak had trusted.</p>
+<blockquote class="prov"><p lang="ms">Harapkan pagar, pagar makan padi.</p><p>You trust the fence to guard the rice, and the fence devours it.</p></blockquote>
+<p>Ilham watched his mother carry that betrayal in silence, and he learned something no school could teach him: that loyalty is rarer than gold, and worth more.</p>
+<blockquote class="qt"><p>"The best way to find out if you can trust somebody is to trust them."</p><cite>Ernest Hemingway</cite></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>First Soup</h4><p>I did not know the salt from sugar,<br>I did not know the flame;<br>I only knew her arm was broken<br>and so for her I came.</p><p>The soup was thin, the bowl was chipped,<br>my hands were shaking still;<br>she drank it slowly, sip by sip,<br>and smiled, and drank her fill.</p></div>
+</section>
+<section class="chap" id="chapter-7-the-house-on-the-hill"><p class="kick">Chapter 7</p><h3>The House on the Hill</h3>
+<blockquote class="qt"><p>"Hope is the thing with feathers that perches in the soul, and sings the tune without the words, and never stops at all."</p><cite>Emily Dickinson</cite></blockquote>
+<p>When the river house could hold them no longer, mother and son climbed to an abandoned house on a hill, pressed close against the mountain. There was no electricity. Food was scarce, and clean water scarcer. For six long months they lived by the light of the moon and whatever candles they could spare.</p>
+<p>Once the family had owned a good house, a car, a motorcycle, and land that stretched green beneath the sky. Now there was nothing. Mak worked from dawn until long after dark. At the hostel, Ilham lived on ten ringgit a month, spending each coin as carefully as a prayer, grateful for the meals the government provided.</p>
+<p>When his birthday came, there was no cake. So he took a sheet of paper, drew a cake upon it, and painted it in bright colours. Then he held it up to the empty room and declared: This is my birthday.</p>
+<p>In the darkness of that house he made a promise to God. One day, I will succeed. And he studied as if his life depended on it, because it did. He was not first in his class, but he was a good student, the kind who joined every event and gave each one his whole heart.</p>
+<p>And on certain nights, in that house without light, mother and son did something no one would have believed: they laughed together. Hunger could not take that from them, and neither could the dark.</p>
+<p>Berakit-rakit ke hulu, berenang-renang ke tepian; bersakit-sakit dahulu, bersenang-senang kemudian. Raft upstream first, then swim to shore at ease; endure the pain now, and joy will follow.</p>
+<blockquote class="qt"><p>"Verily, with hardship comes ease."</p><cite>Al-Quran, Ash-Sharh 94:6</cite></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Painted Cake</h4><p>No candles burned, no sugar rose,<br>no friends came up the hill;<br>I drew a cake in red and gold<br>and called it birthday still.</p><p>God, You were the only guest<br>who heard me make my vow:<br>one day I'll stand where I was blessed.<br>Look, Mak. I'm standing now.</p></div>
+</section>
+<section class="chap" id="chapter-8-the-brother-not-of-blood"><p class="kick">Chapter 8</p><h3>The Brother Not of Blood</h3>
+<blockquote class="qt"><p>"A friend to all is a friend to none."</p><cite>Aristotle</cite></blockquote>
+<p>In the high school years there were two friends. With the first, Ilham shared the easy closeness of youth, the kind that seems as if it will last forever, until one day, without a reason either could name, it simply did not.</p>
+<p>The second friendship began in conflict. Ilham teased the boy once too often, and the boy's patience snapped in a hard shove that left them both shaken. Ilham stepped back, and the teasing stopped. Then, as happens only in the best stories, the boy came to him with an open hand. I'm sorry. Let us be friends again.</p>
+<p>Not long after, in the crowded dining hall, that same boy stood and spoke to everyone: Leave him alone. He is my younger brother. Their families came to know one another, and for a while the boy who had no siblings beside him had a brother.</p>
+<p>When the scholarships came, the elder went first. Take care of yourself, he told Ilham. They had made a promise: whenever one fell, the other would lend a hand. But years later, when Ilham was in need and asked to borrow a little money, the answer came back cold. I don't print money. Find it yourself.</p>
+<p>So he was alone again among his books. And from that bitter cup he drew a lesson he would carry all his life: What must be done, I will do myself. I will be no one's burden. People change, he understood. Hearts change. A man must walk on regardless.</p>
+<blockquote class="prov"><p lang="ms">Kawan ketawa senang dicari, kawan menangis sukar ditemui.</p><p>A friend to laugh with is easily found; a friend to weep with is rarely met.</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>Brother</h4><p>You called me brother in the hall<br>before a hundred eyes;<br>I thought that word would hold through all<br>the seasons and the skies.</p><p>But words are leaves, and leaves will fall,<br>and some trees cannot stay;<br>I keep the word. I keep it all.<br>I simply walk away.</p></div>
+</section>
+<section class="chap" id="chapter-9-the-road-not-chosen"><p class="kick">Chapter 9</p><h3>The Road Not Chosen</h3>
+<blockquote class="qt"><p>"Two roads diverged in a wood, and I, I took the one less travelled by, and that has made all the difference."</p><cite>Robert Frost</cite></blockquote>
+<p>At school Ilham was a riddle to the others: diligent, well-mannered, yet set apart. Some pitied him; others kept their distance. But kindness, like water, finds its way through stone. One friend, seeing his quiet sorrow, went to his own tuition teacher and said, Let him come too. From that small mercy a fire was lit. Ilham taught himself to learn quickly, as if each lesson might be the last he was given.</p>
+<p>When he asked his father for money for books, he received only a few coins. He bought the book anyway and read it the way a starving man eats bread. He knew one truth with his whole being: without education there was nothing. Education would make the world respect him, and respect his mother too.</p>
+<blockquote class="prov"><p lang="ms">Ilmu itu pelita hidup.</p><p>Knowledge is the lamp of life.</p></blockquote>
+<p>When his results came, many universities opened their doors, engineering among them. On registration day he waited outside a friend's house for his father, who had promised the fee. He waited as the morning grew old, as the shadows grew long, until the day itself was done. His father never came.</p>
+<p>So Ilham packed his few things and went to the town, resolved to become a simple labourer and work until his last breath. But Providence, it seems, had been reading over his shoulder. A small notice caught his eye: Work while you study. He applied, and soon an officer came to his mother's door holding a scholarship.</p>
+<p>He had dreamed of becoming a doctor. Instead he was led to law enforcement and forensic study, and for three hard years he studied crime and the law that answers it. Then he returned home to serve his practical at the district office as a law officer.</p>
+<blockquote class="prov"><p lang="ms">Manusia merancang, Tuhan menentukan.</p><p>Man plans, but God decides.</p></blockquote>
+<blockquote class="qt"><p>"And it may be that you dislike a thing which is good for you."</p><cite>Al-Quran, Al-Baqarah 2:216</cite></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Gate</h4><p>I waited at the gate all day<br>for footsteps that would come;<br>the sun went down, and on its way<br>it left my heart gone numb.</p><p>But doors I never thought to knock<br>swung open in the night;<br>I wanted healing's white coat;<br>God gave law, and gave me light.</p></div>
+</section>
+<section class="chap" id="chapter-10-the-lamp-of-knowledge"><p class="kick">Chapter 10</p><h3>The Lamp of Knowledge</h3>
+<blockquote class="qt"><p>"Tell me and I forget. Teach me and I remember. Involve me and I learn."</p><cite>attributed to Benjamin Franklin</cite></blockquote>
+<p>Ilham felt his lamp was not yet bright enough, so he studied again, this time a degree in governance. Those years were not gentle. There were nights with too little to eat, and late shifts after lectures when he ate whatever was left on the table and never once complained. He trusted God, and he kept walking.</p>
+<p>His first post was in marketing, a strange harbour for a man trained in governance. Why am I here? he wondered. But life, like a good author, plants seeds early that bloom only in the final act.</p>
+<p>Then came a lecturer, a woman of rare conviction, who refused to let him hide in comfortable corners. She trained his voice and sharpened his spirit until the quiet boy from the hill could stand tall before any audience. Their bond never broke; they speak to this day.</p>
+<p>For eight years he walked through thick and thin. In digital marketing he learned to build networks. Before students, as a teacher, he learned community. As a public speaker he found his voice. In customer service he learned to untangle other people's troubles; as a researcher, to find the gaps; in human resources, to help people claim what was rightfully theirs. His employers loved him, but love does not pay the rent, and when the wages fell short he moved on. Little by little, he began to give back to the mother who had given him everything.</p>
+<p>He made mistakes, many of them, but he gathered each one like a stone for the foundation of a house not yet built. Then he went back to study once more, at postgraduate level.</p>
+<blockquote class="prov"><p lang="ms">Alah bisa tegal biasa.</p><p>What is hard becomes easy through practice.</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Teacher</h4><p>She did not hand me answers; no,<br>she handed me a stage,<br>and said: Now speak. Let the world know<br>the story on your page.</p><p>My knees were water, voice was thin,<br>my hands could hardly hold;<br>but something rose from deep within<br>and what was lead turned gold.</p></div>
+</section>
+<section class="chap" id="chapter-11-learn-unlearn-relearn"><p class="kick">Chapter 11</p><h3>Learn, Unlearn, Relearn</h3>
+<blockquote class="qt"><p>"The illiterate of the twenty-first century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."</p><cite>Alvin Toffler</cite></blockquote>
+<p>Then the great plague swept across the world. Cities fell silent, streets emptied, and every man was left alone with his own four walls and his own thoughts.</p>
+<p>Ilham had always called himself a non-technical man, a man of words, people and persuasion. But in that stillness he opened a new book written in a strange new tongue: code. Line by stubborn line, he taught himself to become a data analyst. Where once he had read faces in a crowd, now he learned to read the patterns hidden in numbers.</p>
+<p>He learned. He unlearned. He relearned. He became a student again at the very moment the world stood still, and he discovered that the fast learner the tuition teacher had awakened years ago had never truly gone to sleep.</p>
+<p>From data, the road led on to the newest frontier of all: artificial intelligence. He joined a technology company and rose to become a senior executive in AI. Today, as a senior product analyst, he helps products and ideas take their first breath and grow.</p>
+<blockquote class="prov"><p lang="ms">Belakang parang pun, jika diasah, lagikan tajam.</p><p>Even the blunt back of a machete grows sharp if you keep honing it.</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>New Tongue</h4><p>When all the world had locked its door<br>I opened one inside;<br>a language I'd not known before,<br>with logic as its guide.</p><p>The boy who counted mango coins<br>now counts in ones and zeros;<br>a different road, the same old joints,<br>the same old quiet heroes.</p></div>
+</section>
+<section class="chap" id="chapter-12-the-man-who-would-not-bend"><p class="kick">Chapter 12</p><h3>The Man Who Would Not Bend</h3>
+<blockquote class="qt"><p>"I am not what happened to me. I am what I choose to become."</p><cite>attributed to Carl Jung</cite></blockquote>
+<p>A man's story is not told by his titles. It is told by his reasons.</p>
+<p>Why this road? Because somewhere on that hill without light, a boy had vowed not merely to survive, but to lead. One day he would build something of his own, a venture born of his own vision. He would be a man who could not be bent, with a dream that was more than a dream: a plan, held steady toward the future. And he would not rise alone. He would lift others with him, helping them sharpen their skills and find their own roads.</p>
+<blockquote class="prov"><p lang="ms">Hendak seribu daya, tak hendak seribu dalih.</p><p>Where there is desire, there are a thousand ways; where there is none, a thousand excuses.</p></blockquote>
+<p>He had learned that what one wants is hard to win, and it rarely arrives by the road one expects. Yet he never doubted this: God is not cruel. God knows you better than you know yourself. A man may draw his map, but the Almighty knows the land.</p>
+<p>So his counsel to those who would follow is simple. Do what you can. Do not break yourself against the impossible; know your limits. Every road you have walked will one day serve the road ahead. The merchant, the law officer, the marketer, the teacher, the speaker, the analyst: none of them was wasted.</p>
+<p>His hardships did not diminish him; they wrote him. A family that broke. Friends who believed, and friends who turned away. So many things that were never truly his. Yet still he loves to share, to sit among friends, to open his circle wide. Let those who hate, hate; let those who doubt, doubt. He knows what he is doing.</p>
+<blockquote class="qt"><p>"Know thyself."</p><cite>Inscription at the Temple of Apollo, Delphi</cite></blockquote>
+<p>And so we leave him here, on the threshold. The boy who painted his own birthday cake has not finished drawing. The river still flows past the little house; the hill still stands against the mountain; and somewhere, a mother's prayers are still being answered.</p>
+<blockquote class="prov"><p lang="ms">Sedikit-sedikit, lama-lama jadi bukit.</p><p>Little by little, in time, it becomes a hill.</p></blockquote>
+<div class="poem"><p class="pt">Poem</p><h4>The Hill</h4><p>They said I did not share their blood;<br>they said I'd never rise;<br>I built my hill from rain and mud<br>and stood beneath the skies.</p><p>So if you're small, and if you're lost,<br>and no one knows your name:<br>keep drawing cakes, whatever the cost.<br>One day you'll light the flame.</p></div>
+<p class="fin">Here ends the First Book. The story continues in Book Two.</p>
+</section>
+<section class="chap" id="about-the-author"><h3>About the Author</h3>
+<img class="author" src="img/headshot.jpg" alt="Muhammad Yusri Abdullah, who writes as Yushi">
+<p>Yushi is the commercial name of Muhammad Yusri Abdullah, a writer and product analyst based in Kuala Lumpur, Malaysia, who works where people, data and artificial intelligence meet.</p>
+<p>He was born in Malaysia, with roots across the northern border, and raised in a small village by an adoptive mother who gave him everything she had. He sold fruit at seven and burgers at ten, lived for six months in a house without electricity, and survived on ten ringgit a month at a school hostel. A scholarship opened the door that money could not: three years of law enforcement and forensic study, a degree in governance, and later a master's in business management.</p>
+<p>His working life has been a long apprenticeship in many rooms: marketing and digital marketing, teaching, public speaking, customer service, research and human resources. During the pandemic, a self-described non-technical man taught himself Python and became a data analyst. That road led him into artificial intelligence, and today he helps grow products and innovation as a senior product analyst. He describes himself as a business sustainability practitioner, focused on ESG, digital transformation and AI. One day he hopes to found a venture of his own, to keep studying, and to help others sharpen their skills and find their own roads.</p>
+</section>
+<section class="chap" id="why-i-wrote-this-book"><h3>Why I Wrote This Book</h3>
+<p>I wrote this book for my mother. She did not carry me in her womb, but she carried me through every storm that came after, and I wanted her love to live somewhere more lasting than my memory.</p>
+<p>I also wrote it for the boy I was: the one who was told he was not of the blood, who waited all day outside a friend's house for a father who never came, who drew a cake on paper because there was no cake. For a long time I kept those years quiet. Now I understand that they did not make me smaller. They wrote who I am.</p>
+<p>And I wrote it for you, if you are small right now, or lost, or hungry, or told that you do not belong. I will not pretend the road is easy. What we want is hard to win, and it rarely comes the way we plan. But God knows better than we do, education opens doors that money cannot, and a person who keeps learning, unlearning and relearning can climb further than anyone expects.</p>
+<p>The old saying is true: sedikit-sedikit, lama-lama jadi bukit. Little by little, in time, it becomes a hill. This book is the first part of mine. The rest of the story is still being written.</p>
+<p class="sign">— Yushi</p>
+</section></template>
 <dialog class="lb" id="lb"><button type="button" id="lb-close" class="lb-x" aria-label="Close">✕</button><img id="lb-img" alt=""><p id="lb-cap"></p><div class="lb-nav"><button type="button" id="lb-prev" aria-label="Previous photo">‹</button><span id="lb-count"></span><button type="button" id="lb-next" aria-label="Next photo">›</button></div></dialog>
 <div class="mbar" aria-label="Quick contact"><button class="btn y" type="button" id="mbar-email"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>Copy email</button><a class="btn b" href="https://www.linkedin.com/in/yushabdullah" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.83v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11z"/></svg>LinkedIn</a></div>
 <a class="totop" href="#top" aria-label="Back to top">↑</a>
@@ -2018,11 +2214,12 @@ footer .av img{border-color:var(--bg)!important}
   var $=function(i){return document.getElementById(i)};
   var br=$('br'),book=$('br-book'),cols=$('br-cols'),n=$('br-n'),sel=$('br-ch'),pt=$('br-t');
   if(!br)return;
-  var page=0,pages=1,step=1,built=false,anchors=[],fs=1.06;
+  var page=0,pages=1,step=1,built=false,anchors=[],fs=1.06,bk='1';
+  var BK={'1':{src:'br-src',cover:'hd/book-cover.jpg',t:'Hard Times Build Resilience, Soft Times Make Us Soft',key:'pf-book-page'},'2':{src:'br-src2',cover:'hd/cake-cover.jpg',t:'The Painted Cake',key:'pf-book2-page'}};
   function build(){
-    if(built)return;built=true;
-    var f=document.createElement('figure');f.className='br-cover';var im=document.createElement('img');im.src='hd/book-cover.jpg';im.alt='Book cover';f.appendChild(im);cols.appendChild(f);
-    cols.appendChild(document.importNode($('br-src').content,true));
+    if(built===bk)return;built=bk;cols.innerHTML='';anchors=[];sel.innerHTML='';br.setAttribute('data-book',bk);pt.textContent=BK[bk].t;br.setAttribute('aria-label',BK[bk].t+', page by page');
+    var f=document.createElement('figure');f.className='br-cover';var im=document.createElement('img');im.src=BK[bk].cover;im.alt=BK[bk].t+' cover';f.appendChild(im);cols.appendChild(f);
+    cols.appendChild(document.importNode($(BK[bk].src).content,true));
     [].forEach.call(cols.querySelectorAll('[id]'),function(e){e.id='br-'+e.id});
     [].forEach.call(cols.querySelectorAll('.part,section.chap'),function(el){
       var t=el.classList.contains('part')?el.querySelector('span').textContent+': '+el.querySelector('h2').textContent:((el.querySelector('.kick')||{}).textContent?el.querySelector('.kick').textContent+': ':'')+((el.querySelector('h3')||{}).textContent||'Epigraph');
@@ -2042,17 +2239,17 @@ footer .av img{border-color:var(--bg)!important}
     n.textContent='Page '+(page+1)+' of '+pages;
     var x=cols.getBoundingClientRect().left,cur=-1;
     anchors.forEach(function(a,i){if(Math.round((a.el.getBoundingClientRect().left-x+cols.scrollLeft)/step)<=page)cur=i});
-    if(anchors[cur]){sel.value=cur;pt.textContent=anchors[cur].t}else{sel.selectedIndex=0;pt.textContent='Hard Times Build Resilience, Soft Times Make Us Soft'}
-    try{localStorage.setItem('pf-book-page',page/(Math.max(1,pages-1)))}catch(e){}
+    if(anchors[cur]){sel.value=cur;pt.textContent=anchors[cur].t}else{sel.selectedIndex=0;pt.textContent=BK[bk].t}
+    try{localStorage.setItem(BK[bk].key,page/(Math.max(1,pages-1)))}catch(e){}
   }
-  function open(){
-    build();br.hidden=false;document.body.style.overflow='hidden';
-    requestAnimationFrame(function(){var f=0;try{f=parseFloat(localStorage.getItem('pf-book-page'))||0}catch(e){}
+  function open(k){
+    bk=(k==='2')?'2':'1';build();br.hidden=false;document.body.style.overflow='hidden';
+    requestAnimationFrame(function(){var f=0;try{f=parseFloat(localStorage.getItem(BK[bk].key))||0}catch(e){}
       pages=1;layout(false);page=Math.round(f*(pages-1));go(page);$('br-next').focus()});
     var im=cols.querySelector('.br-cover img');if(im&&!im.complete)im.onload=function(){layout(true)};
   }
   function close(){br.hidden=true;document.body.style.overflow=''}
-  $('br-open').onclick=open;$('br-close').onclick=close;
+  $('br-open').onclick=function(){open('1')};if($('br-open2'))$('br-open2').onclick=function(){open('2')};$('br-close').onclick=close;
   $('br-next').onclick=function(){go(page+1)};$('br-prev').onclick=function(){go(page-1)};
   function size(d){fs=Math.max(.9,Math.min(1.4,fs+d));br.style.setProperty('--fs',fs+'rem');setTimeout(function(){layout(true)},30)}
   $('br-fu').onclick=function(){size(.08)};$('br-fd').onclick=function(){size(-.08)};
@@ -2062,7 +2259,7 @@ footer .av img{border-color:var(--bg)!important}
   book.addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>40)go(page+(d<0?1:-1));sx=null},{passive:true});
   document.addEventListener('keydown',function(e){if(br.hidden)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();go(page+1)}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(page-1)}else if(e.key==='Escape')close()});
   var rt;window.addEventListener('resize',function(){if(br.hidden)return;clearTimeout(rt);rt=setTimeout(function(){layout(true)},150)});
-  if(location.hash==='#read')open();
+  if(location.hash==='#read')open('1');else if(location.hash==='#read2')open('2');
 })();
 </script>
 <script>
