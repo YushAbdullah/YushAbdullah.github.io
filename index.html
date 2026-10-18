@@ -7,7 +7,7 @@
 <meta name="description" content="Muhammad Yusri Abdullah: Senior Product Analyst and Product Owner for AG ONE Hire, white paper author, speaker and trainer, Kuala Lumpur.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Cinzel:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Cinzel:wght@500;600&display=swap">
 <style>
 /* Layout: brand system of matte royal-blue grounds, glossy blue/yellow controls and clean white panels.
    Order puts the White Paper and Projects first, then media, story, proof and contact. */
@@ -1094,6 +1094,46 @@ footer .av img{border-color:var(--bg)!important}
 .br .fin{text-align:center;color:var(--bk-gold,#7C6230);font:500 1rem/1.5 "Cinzel",var(--display);margin:2em 0 1em}
 .br .sign{text-align:right;font-style:italic;color:var(--bk-gold,#7C6230)}
 .br[data-book="2"] h3{font-family:"Cinzel",var(--display)!important;font-weight:500!important;letter-spacing:.03em}
+/* Book 1 "Lime editorial": same look as the Hard Times ebook (black + lime, Anton condensed) */
+.book:not(.book2){background:#111!important;background-image:radial-gradient(700px 380px at 85% 0%,rgba(181,242,61,.14),transparent 62%)!important;color:#F3F3EF!important}
+.book:not(.book2)::after{content:"\201C"!important;clip-path:none!important;background:none!important;width:auto!important;aspect-ratio:auto!important;right:24px!important;bottom:auto!important;top:6px;font:400 12rem/1 "Anton",Impact,sans-serif;color:#B5F23D;opacity:.9!important}
+.book:not(.book2) h2{font-family:"Anton",Impact,"Arial Narrow",sans-serif!important;font-weight:400!important;text-transform:uppercase;letter-spacing:.005em!important;line-height:1.04!important;font-size:clamp(2.6rem,5.6vw,4.4rem)!important;color:#F3F3EF!important;position:relative;max-width:16ch}
+.book:not(.book2) h2 em{font-family:inherit!important;font-style:normal!important;color:#111!important;background:#B5F23D;padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.book:not(.book2) .kicker{display:inline-block;background:#B5F23D;color:#111!important;padding:6px 10px 5px;border-radius:2px;font-weight:800;letter-spacing:.2em}
+.book:not(.book2) .kicker::before{display:none!important}
+.book:not(.book2) .by{color:#B5F23D!important;letter-spacing:.2em}
+.book:not(.book2) p.bl{color:#E6E6E0!important}
+.book:not(.book2) blockquote{background:#1C1C1C!important;border:0!important;border-left:4px solid #B5F23D!important;border-radius:4px!important;color:#F3F3EF!important;font:700 1.35rem/1.3 var(--body)!important;font-style:normal!important}
+.book:not(.book2) blockquote small{color:#B5F23D!important;letter-spacing:.2em;text-transform:uppercase;font-size:.74rem!important}
+.book:not(.book2) .book-parts li{background:transparent!important;border:1px solid rgba(243,243,239,.35)!important;color:#F3F3EF!important;border-radius:999px!important}
+.book:not(.book2) .book-parts li b{background:#B5F23D!important;color:#111!important}
+.book:not(.book2) .btn.y{background:#B5F23D!important;color:#111!important;border-color:#B5F23D!important}
+.book:not(.book2) .btn.y:hover{background:#fff!important}
+.book:not(.book2) .btn.ghost{background:transparent!important;color:#F3F3EF!important;border:1.5px solid #F3F3EF!important}
+.book:not(.book2) .book-cv{background:#111!important}
+@media (max-width:900px){.book:not(.book2)::after{display:none!important}}
+/* reader: Book 1 */
+.br[data-book="1"]{--lime:#B5F23D}
+.br[data-book="1"] .br-nav .go{background:#111!important;color:var(--lime)!important;border-color:#111!important}
+.br[data-book="1"] .br-top select,.br[data-book="1"] .br-nav button{border-radius:999px}
+.br[data-book="1"] .br-cols{font-family:"Source Serif 4",Georgia,serif}
+.br[data-book="1"] .br-cols h3{font:400 2.4rem/.95 "Anton",Impact,sans-serif!important;text-transform:uppercase;letter-spacing:.01em}
+.br[data-book="1"] .br-cols .kick{display:inline-block;background:#111;color:var(--lime);padding:6px 10px 5px;border-radius:2px;font-weight:800;letter-spacing:.22em}
+.br[data-book="1"] .br-cols .part{background:#111;color:#F3F3EF;text-align:center;position:relative;overflow:hidden;border-radius:4px}
+.br[data-book="1"] .br-cols .part::before{content:"\201C";position:absolute;left:50%;transform:translateX(-50%);top:2%;font:400 9rem/1 "Anton",Impact,sans-serif;color:var(--lime)}
+.br[data-book="1"] .br-cols .part span{color:var(--lime);font-weight:800;letter-spacing:.24em}
+.br[data-book="1"] .br-cols .part h2{font:400 clamp(3.4rem,9vw,5.6rem)/.88 "Anton",Impact,sans-serif;text-transform:uppercase;color:#F3F3EF;margin:.2em 0 0}
+.br[data-book="1"] .br-cols .part .ill.photo img{filter:invert(1);background:#000;box-shadow:none;border-radius:0;object-fit:contain}
+.br[data-book="1"] .br-cols .ill.photo img{border-radius:0;box-shadow:none;object-fit:contain;background:#fff}
+.br[data-book="1"] .br-cols blockquote{background:#111;color:#F3F3EF;border:0;border-radius:4px;padding:40px 22px 18px;position:relative;font:700 1.15em/1.3 Inter,Arial,sans-serif;font-style:normal}
+.br[data-book="1"] .br-cols blockquote::before{content:"\201C";position:absolute;left:16px;top:-10px;font:400 4.5rem/1 "Anton",Impact,sans-serif;color:var(--lime)}
+.br[data-book="1"] .br-cols blockquote p{color:#F3F3EF}
+.br[data-book="1"] .br-cols blockquote cite{color:var(--lime);letter-spacing:.2em}
+.br[data-book="1"] .br-cols .lesson{background:var(--lime);color:#111;border:0;border-radius:4px;padding:16px 18px;font:600 .95rem/1.55 Inter,Arial,sans-serif}
+.br[data-book="1"] .br-cols .lesson strong{display:block;font:400 1.4rem/1 "Anton",Impact,sans-serif;letter-spacing:.02em;color:#111;margin-bottom:6px}
+.br[data-book="1"] .br-cols .lesson mark{background:#111;color:var(--lime)}
+.br[data-book="1"] .br-cols .author{filter:grayscale(1);border:3px solid var(--lime)}
+.br[data-book="1"] .br-cols a{color:inherit;text-decoration-color:var(--lime);text-decoration-thickness:2px}
 </style>
 </head>
 <body>
