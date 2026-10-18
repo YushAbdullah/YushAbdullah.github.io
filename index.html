@@ -1076,15 +1076,19 @@ footer .av img{border-color:var(--bg)!important}
 .book.book2 .book-in{direction:rtl}.book.book2 .book-in>*{direction:ltr}
 @media (max-width:900px){.book.book2 .book-in{direction:ltr}}
 /* reader styling for book two */
-.br[data-book="2"] .br-book{background:#FBF6EC}
+.br[data-book="2"]{--surface:#FBF6EC;--ink:#15231F;--muted:#4E5A55;--chip:#EFE5D0;--rule:#DDD0B6;--green:#35534A;--bk-gold:#7C6230}
+:root[data-theme="dark"] .br[data-book="2"]{--surface:#15231F;--ink:#F0E6D2;--muted:#B8B3A4;--chip:#1B2C26;--rule:#2C3F37;--green:#C8AA6E;--bk-gold:#C8AA6E}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .br[data-book="2"]{--surface:#15231F;--ink:#F0E6D2;--muted:#B8B3A4;--chip:#1B2C26;--rule:#2C3F37;--green:#C8AA6E;--bk-gold:#C8AA6E}}
+.br[data-book="2"] .br-book{background:var(--surface)!important}
+.br[data-book="2"] .br-cols,.br[data-book="2"] .br-cols h3,.br[data-book="2"] .br-cols h4{color:var(--ink)}
 .br .poem{margin:1.6em 0;padding:1.1em 1em;border:1px solid #C8AA6E;text-align:center;break-inside:avoid}
-.br .poem .pt{font:600 .62rem/1 var(--head);letter-spacing:.24em;text-transform:uppercase;color:#7C6230;margin:0}
+.br .poem .pt{font:600 .62rem/1 var(--head);letter-spacing:.24em;text-transform:uppercase;color:var(--bk-gold,#7C6230);margin:0}
 .br .poem h4{font:500 1.2rem/1.2 "Cinzel",var(--display);margin:.3em 0 .8em;letter-spacing:.04em}
 .br .poem p{font-style:italic;margin:0 0 .8em}
 .br .prov{margin:1.4em 0;padding:.9em 1.1em;background:#15231F;color:#F0E6D2;border:1px solid #C8AA6E;break-inside:avoid;border-radius:2px}
 .br .prov p{margin:0;color:#F0E6D2}.br .prov p:first-child{font:500 1.05em/1.4 "Cinzel",var(--display);letter-spacing:.02em}.br .prov p+p{font-style:italic;color:#D8CDB4;margin-top:4px}
-.br .fin{text-align:center;color:#7C6230;font:500 1rem/1.5 "Cinzel",var(--display);margin:2em 0 1em}
-.br .sign{text-align:right;font-style:italic;color:#7C6230}
+.br .fin{text-align:center;color:var(--bk-gold,#7C6230);font:500 1rem/1.5 "Cinzel",var(--display);margin:2em 0 1em}
+.br .sign{text-align:right;font-style:italic;color:var(--bk-gold,#7C6230)}
 .br[data-book="2"] h3{font-family:"Cinzel",var(--display)!important;font-weight:500!important;letter-spacing:.03em}
 </style>
 </head>
@@ -1167,7 +1171,7 @@ footer .av img{border-color:var(--bg)!important}
     </div>
     <div class="projects" id="projects-grid">
       <article class="rv proj feat" data-c="product">
-        <div class="thumb"><img src="img/ag-expo.jpg" width="960" height="720" loading="lazy" decoding="async" data-hd="hd/ag-expo.jpg" alt="Yusri demoing the AG ONE ecosystem to visitors at an expo booth"><span class="cat">Product</span></div>
+        <div class="thumb"><img src="img/ag-work.jpg" width="960" height="720" loading="lazy" decoding="async" data-hd="hd/ag-work.jpg" style="object-position:50% 40%" alt="Yusri at his laptop, working on AG ONE Hire"><span class="cat">Product</span></div>
         <div class="pb">
           <p class="when">Apr 2026 – Present · Aventra Group</p>
           <h3>AG ONE Hire</h3>
@@ -1263,7 +1267,8 @@ footer .av img{border-color:var(--bg)!important}
       <ul class="book-parts"><li><b>I</b>Roots</li><li><b>II</b>Voice</li><li><b>III</b>Service</li><li><b>IV</b>Grit</li><li><b>V</b>Leadership</li></ul>
       <div class="cta2">
         <button type="button" class="btn y" id="br-open">Read the book here</button>
-        <a class="btn ghost" href="https://claude.ai/artifact/NC4xxUiLRwbpyDSCcz3vhj" target="_blank" rel="noopener">Open full ebook ↗</a>
+        <a class="btn ghost" href="https://yushabdullah.github.io/books/hard-times/" target="_blank" rel="noopener">Open full ebook ↗</a>
+        <a class="btn ghost" href="https://yushabdullah.github.io/books/Hard-Times-Build-Resilience.epub" download>Download EPUB</a>
       </div>
     </div>
   </div>
@@ -1281,7 +1286,8 @@ footer .av img{border-color:var(--bg)!important}
       <ul class="book-parts"><li><b>12</b>Chapters</li><li><b>13</b>Original poems</li><li><b>14</b>Malay proverbs</li></ul>
       <div class="cta2">
         <button type="button" class="btn y" id="br-open2">Read the book here</button>
-        <a class="btn ghost" href="https://claude.ai/artifact/RCeqVrr8DCtX5petfAD8eV" target="_blank" rel="noopener">Open full ebook ↗</a>
+        <a class="btn ghost" href="https://yushabdullah.github.io/books/painted-cake/" target="_blank" rel="noopener">Open full ebook ↗</a>
+        <a class="btn ghost" href="https://yushabdullah.github.io/books/The-Painted-Cake.epub" download>Download EPUB</a>
       </div>
     </div>
   </div>
@@ -2045,7 +2051,7 @@ footer .av img{border-color:var(--bg)!important}
 <p class="fin">Here ends the First Book. The story continues in Book Two.</p>
 </section>
 <section class="chap" id="about-the-author"><h3>About the Author</h3>
-<img class="author" src="img/headshot.jpg" alt="Muhammad Yusri Abdullah, who writes as Yushi">
+<img class="author" src="img/yushi-author.jpg" alt="Yushi (Muhammad Yusri Abdullah) speaking at a university event">
 <p>Yushi is the commercial name of Muhammad Yusri Abdullah, a writer and product analyst based in Kuala Lumpur, Malaysia, who works where people, data and artificial intelligence meet.</p>
 <p>He was born in Malaysia, with roots across the northern border, and raised in a small village by an adoptive mother who gave him everything she had. He sold fruit at seven and burgers at ten, lived for six months in a house without electricity, and survived on ten ringgit a month at a school hostel. A scholarship opened the door that money could not: three years of law enforcement and forensic study, a degree in governance, and later a master's in business management.</p>
 <p>His working life has been a long apprenticeship in many rooms: marketing and digital marketing, teaching, public speaking, customer service, research and human resources. During the pandemic, a self-described non-technical man taught himself Python and became a data analyst. That road led him into artificial intelligence, and today he helps grow products and innovation as a senior product analyst. He describes himself as a business sustainability practitioner, focused on ESG, digital transformation and AI. One day he hopes to found a venture of his own, to keep studying, and to help others sharpen their skills and find their own roads.</p>
